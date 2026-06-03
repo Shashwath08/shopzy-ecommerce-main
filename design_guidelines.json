@@ -1,0 +1,162 @@
+{
+  "theme": "Light",
+  "archetype": "Custom E-commerce (Amazon-inspired with Swiss High-Contrast structure)",
+  "colors": {
+    "primary": {
+      "DEFAULT": "#FF9900",
+      "hover": "#E68A00",
+      "foreground": "#111111"
+    },
+    "background": {
+      "DEFAULT": "#F8F9FA",
+      "paper": "#FFFFFF",
+      "dark": "#131921",
+      "nav": "#232F3E"
+    },
+    "text": {
+      "primary": "#111111",
+      "secondary": "#565959",
+      "inverse": "#FFFFFF",
+      "price": "#B12704"
+    },
+    "border": {
+      "DEFAULT": "#E7E7E7",
+      "focus": "#FF9900"
+    },
+    "status": {
+      "success": "#067D62",
+      "warning": "#FFA41C",
+      "error": "#CC0C39"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "price_large": "text-3xl font-medium"
+    },
+    "rules": [
+      "No Inter for headings. Use Outfit.",
+      "Uppercase tight tracking for labels and overlines.",
+      "Ensure minimum 4.5:1 contrast ratio for text."
+    ]
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-12 md:py-20",
+    "grid": {
+      "bento_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "product_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+    },
+    "cards": {
+      "padding": "p-6",
+      "radius": "rounded-xl",
+      "shadow": "shadow-sm hover:shadow-md transition-shadow duration-200",
+      "border": "border border-border bg-white"
+    }
+  },
+  "components": {
+    "navigation": {
+      "style": "Dark background (#232F3E) with white text, sticky top (z-50).",
+      "elements": "Logo, wide search bar with category dropdown, user profile, cart with badge.",
+      "search_bar": "White background, rounded-md, orange search button.",
+      "mobile": "Hamburger menu on left, full-screen drawer for categories."
+    },
+    "hero_carousel": {
+      "style": "Full width or large container, generous height (max 80vh), smooth slide animation.",
+      "content": "Large promotional graphics, clear CTA button.",
+      "overlay": "bg-gradient-to-r from-black/60 to-transparent for text readability."
+    },
+    "product_card": {
+      "layout": "Vertical stack. Image at top (aspect-square, object-contain, bg-white), details below.",
+      "details": "Product title (truncate 2 lines), star rating, price (large, bold), discount badge, 'Add to Cart' button (primary color).",
+      "hover": "Slight upward translation (-translate-y-1) and enhanced shadow."
+    },
+    "shopping_cart": {
+      "layout": "Two-column on desktop (cart items on left, order summary on right).",
+      "items": "Horizontal layout, image, title, quantity selector (Shadcn Select or custom +/-, small size), delete button.",
+      "summary": "Sticky right column with subtotal, shipping info, and large checkout button."
+    },
+    "checkout": {
+      "layout": "Clean, minimal interface without main nav distractions.",
+      "forms": "Use Shadcn Form, Input, Select. Left-aligned labels, clear error states.",
+      "steps": "Accordion or step-by-step wizard (Shipping -> Payment -> Review)."
+    },
+    "admin_dashboard": {
+      "layout": "Sidebar navigation (dark mode) + main content area (light mode).",
+      "widgets": "Bento grid for top-level stats (Sales, Orders, Users).",
+      "tables": "Shadcn Table for products and orders, with pagination and filtering."
+    },
+    "toast_notifications": {
+      "library": "sonner",
+      "position": "bottom-right",
+      "style": "Clean white background, subtle border, colored icons based on status."
+    }
+  },
+  "interactive_and_motion": {
+    "hover_states": "Buttons darken on hover (bg-primary to hover:bg-primary-hover). Links get underline or color shift.",
+    "transitions": "transition-all duration-200 ease-in-out for interactive elements.",
+    "loading": "Skeleton loaders for product grids and dashboard widgets.",
+    "focus": "focus:ring-2 focus:ring-primary focus:outline-none"
+  },
+  "accessibility_and_testing": {
+    "contrast": "Strict APCA/WCAG AA compliance. Orange on white must have dark text.",
+    "aria": "Use aria-labels for icon-only buttons (cart, search).",
+    "testing_attributes": "All interactive elements MUST have data-testid attributes (e.g., data-testid='add-to-cart-button')."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "Hero Banner",
+        "url": "https://images.unsplash.com/photo-1758274252497-fa3e681f283a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxzdHlsaXNoJTIwcGVvcGxlJTIwc2hvcHBpbmclMjBmYXNoaW9ufGVufDB8fHx8MTc3ODY1MjIzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Fashion sale banner"
+      },
+      {
+        "category": "Hero Banner",
+        "url": "https://images.unsplash.com/photo-1760087616415-62270db23966?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxzbWFydCUyMGhvbWUlMjBlbGVjdHJvbmljcyUyMG1vZGVybnxlbnwwfHx8fDE3Nzg2NTIyMzJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Electronics showcase banner"
+      },
+      {
+        "category": "Products - Electronics",
+        "url": "https://images.unsplash.com/photo-1591869754715-5f679687039c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBmYXNoaW9uJTIwZWxlY3Ryb25pY3MlMjBwcm9kdWN0c3xlbnwwfHx8fDE3Nzg2NTIyMDZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Camera and smartphone"
+      },
+      {
+        "category": "Products - Electronics",
+        "url": "https://images.unsplash.com/photo-1756705533779-105bf34e0722?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBmYXNoaW9uJTIwZWxlY3Ryb25pY3MlMjBwcm9kdWN0c3xlbnwwfHx8fDE3Nzg2NTIyMDZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Tech gadgets flat lay"
+      },
+      {
+        "category": "Products - Fashion",
+        "url": "https://images.unsplash.com/photo-1758274251734-072c6b996181?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxzdHlsaXNoJTIwcGVvcGxlJTIwc2hvcHBpbmclMjBmYXNoaW9ufGVufDB8fHx8MTc3ODY1MjIzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Two smiling women with shopping bags"
+      },
+      {
+        "category": "Products - Home",
+        "url": "https://images.unsplash.com/photo-1765824142352-7bd73ea117f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxzbWFydCUyMGhvbWUlMjBlbGVjdHJvbmljcyUyMG1vZGVybnxlbnwwfHx8fDE3Nzg2NTIyMzJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Robot vacuum cleaner"
+      }
+    ]
+  },
+  "icon_strategy": {
+    "library": "lucide-react",
+    "usage": "Use for navigation, cart, user profile, settings, and standard UI elements. Keep stroke width consistent (1.5 or 2)."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. Do not use generic blue defaults.",
+    "Ensure the hero carousel uses the provided images with proper gradient overlays for text readability.",
+    "Implement product cards with the hover effects detailed above.",
+    "Do NOT use placeholder images (like via.placeholder.com). Use the provided media URLs.",
+    "Add 'data-testid' to all buttons, links, and forms for testing purposes.",
+    "For the dashboard, strictly adhere to the bento grid layout."
+  ]
+}
